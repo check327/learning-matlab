@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MATLAB 从零到期末 · 学习站</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <button id="menuBtn" class="icon-btn" type="button" aria-label="显示或隐藏目录" title="显示或隐藏目录">☰</button>
+    <div class="brand">
+      <span class="brand-mark">M</span>
+      <div class="brand-text">
+        <strong>MATLAB 从零到期末</strong>
+        <span>配套教材：《MATLAB程序设计基础与应用》（清华大学出版社）</span>
+      </div>
+    </div>
+  </div>
+  <nav class="topnav">
+    <button class="nav-btn is-active" data-view="home" type="button">学习地图</button>
+    <button class="nav-btn" data-view="lab" type="button">练习台</button>
+    <button class="nav-btn" data-view="exam" type="button">期末模拟</button>
+    <button class="nav-btn" data-view="sheet" type="button">速查表</button>
+  </nav>
+  <div class="topbar-right">
+    <div class="progress-chip" title="已完成的知识点 / 总知识点">
+      <span id="progressText">0%</span>
+      <div class="progress-bar"><i id="progressFill"></i></div>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <input id="searchBox" type="search" placeholder="搜索知识点 / 函数名" autocomplete="off">
+    </div>
+    <div id="toc" class="toc"></div>
+    <div class="sidebar-foot">
+      <button id="resetProgress" class="link-btn" type="button">清空学习进度</button>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <section id="view-home" class="view"></section>
+    <section id="view-lesson" class="view is-hidden"></section>
+    <section id="view-lab" class="view is-hidden"></section>
+    <section id="view-exam" class="view is-hidden"></section>
+    <section id="view-sheet" class="view is-hidden"></section>
+  </main>
+</div>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/lexer.js"></script>
+<script src="assets/js/parser.js"></script>
+<script src="assets/js/builtins.js"></script>
+<script src="assets/js/interp.js"></script>
+<script src="assets/js/plot.js"></script>
+<script src="assets/js/course.js"></script>
+<script src="assets/js/course2.js"></script>
+<script src="assets/js/exercises.js"></script>
+<script src="assets/js/exercises2.js"></script>
+<script src="assets/js/exam.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
